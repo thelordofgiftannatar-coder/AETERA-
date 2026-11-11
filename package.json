@@ -25,13 +25,16 @@
       "target": [
         { "target": "nsis", "arch": ["x64"] },
         { "target": "portable", "arch": ["x64"] }
-      ],
-      "artifactName": "TheBrazilsCave-${version}-${arch}-${target}.${ext}"
+      ]
     },
     "nsis": {
       "oneClick": false,
       "allowToChangeInstallationDirectory": true,
-      "createDesktopShortcut": true
+      "createDesktopShortcut": true,
+      "artifactName": "TheBrazilsCave-Setup-${version}.${ext}"
+    },
+    "portable": {
+      "artifactName": "TheBrazilsCave-Portable-${version}.${ext}"
     }
   }
 }
